@@ -3,6 +3,7 @@ console.log("Temperature Conversion");
 function convertTemperature(){
     let scale = prompt("C to convert Celsius to Fahrenheit or F to convert Fahrenheit to Celsius");
     let C = ((Fahrenheit - 32) * 5/9);
+    let F = ((Celsius * 9/5) + 32);
 
     if(scale == "C"){
         (Fahrenheit - 32) * 5/9
@@ -10,7 +11,10 @@ function convertTemperature(){
         (Celsius * 9/5) + 32
     };
 
-    document.getElementById("result").innerHTML=`The conversion of Celsius ${temp} to Farhenheit is ${fahrenheit}`;
+    concole.log(`The conversion of Celius ${C} to Fahrenheit is ${F}`);
+    concole.log(`The conversion of Fahrenheit ${F} to Celcius is ${C}`);
+
+    document.getElementById("result").innerHTML=`The temperature ${C})`;
 }
 
 
